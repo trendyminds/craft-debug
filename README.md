@@ -11,6 +11,9 @@ A simple Craft module to debug Twig within your browser
 
 {# Send the contents of `var` to a console.table() #}
 {{ debug(var, { view: 'table' }) }}
+
+{# Send the contents of `var` to an instance of Symfony's VarDumper component #}
+{{ debug(var, { view: 'inline' }) }}
 ```
 
 **NOTE**: If [devMode](https://craftcms.com/docs/3.x/config/config-settings.html#devmode) is disabled the debug statement will not be processed.
