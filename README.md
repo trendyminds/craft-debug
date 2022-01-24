@@ -4,8 +4,16 @@ A simple Craft module to debug Twig within your browser
 <img src="example.png">
 
 ## Usage
-- Use `{{ debug(var) }}` to send the contents of `var` to your browser's console.
-- If [devMode](https://craftcms.com/docs/3.x/config/config-settings.html#devmode) is disabled the debug statement will not be processed.
+
+```twig
+{# Send the contents of `var` to a console.log() #}
+{{ debug(var) }}
+
+{# Send the contents of `var` to a console.table() #}
+{{ debug(var, { view: 'table' }) }}
+```
+
+**NOTE**: If [devMode](https://craftcms.com/docs/3.x/config/config-settings.html#devmode) is disabled the debug statement will not be processed.
 
 ## Installation
 1. [Download a zip archive](https://github.com/trendyminds/craft-debug/archive/master.zip), rename folder to `debug` and add it to your `modules/` folder.
