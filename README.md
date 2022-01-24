@@ -1,5 +1,5 @@
 # 🐞 Debug
-A simple Craft module to debug Twig within your browser
+A simple Craft module, inspired by Mildly Geeky's ["Kint"](https://plugins.craftcms.com/kint), to debug Twig within your browser
 
 <img src="example.png">
 
